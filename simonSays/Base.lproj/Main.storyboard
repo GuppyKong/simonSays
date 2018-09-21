@@ -81,6 +81,7 @@
                     <connections>
                         <outlet property="colorsFrame" destination="9pM-ss-DUz" id="2vr-Cl-dX9"/>
                         <outlet property="messageLabel" destination="eWf-dg-gRU" id="ekr-59-G2D"/>
+                        <outlet property="startButton" destination="lAW-GJ-1vh" id="csc-GN-kF9"/>
                         <outletCollection property="colorDisplays" destination="JKJ-st-W7s" collectionClass="NSMutableArray" id="XT0-Bx-M03"/>
                         <outletCollection property="colorDisplays" destination="S2k-Nl-IU7" collectionClass="NSMutableArray" id="t00-Ga-XmJ"/>
                         <outletCollection property="colorDisplays" destination="ZBP-wI-hQb" collectionClass="NSMutableArray" id="6zW-C7-bCP"/>

@@ -31,9 +31,44 @@ class ViewController: UIViewController {
     @IBAction func onStartButtonTapped(_ sender: Any) {
     }
     
+    func addToPattern() {
+        pattern.append(Int(arc4random_uniform(4)))
+    }
     
-    
-    
+    func restart() {
+        pattern.removeAll()
+        index = 0
+        addToPattern()
+        startButton.alpha = 1.0
+    }
 
+    func flashColor(number: Int) {
+        self.playSound(fileName: String(number))
+        UIView.transition(with: colorDisplays[number], duration: 0.2, options: .transitionCrossDissolve, animations: {
+            self.colorDisplays[number].alpha = 1.0
+        }} {(true) in
+    UIView.tra
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    func playSound(fileName: String){
+        if let path = Bundle.main.path(forResource: fileName, ofType: "wav"){
+            let url = URL(fileURLWithPath: path)
+            do{
+                self.sound = try AVAudioPlayer(contentsOf: url)
+                self.sound?.play()
+            }
+            catch {
+                print("Can't find file")
+            }
+        }
+    }
+    
 }
 
