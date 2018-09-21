@@ -46,10 +46,11 @@ class ViewController: UIViewController {
         self.playSound(fileName: String(number))
         UIView.transition(with: colorDisplays[number], duration: 0.2, options: .transitionCrossDissolve, animations: {
             self.colorDisplays[number].alpha = 1.0
-        }} {(true) in
-    UIView.tra
+        }) {(true) in
+            UIView.transition(with: self.colorDisplays[number], duration: 0.2, options: .transitionCrossDissolve, animations: {self.colorDisplays[number].alpha = 4.0
+                }, completion: nil)
+        }
     
-    }
     
     
     
