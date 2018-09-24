@@ -21,11 +21,12 @@ class ViewController: UIViewController {
     var index = 0
     var playerTurn = false
     var gameOver = true
-
+    
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-       }
+    }
     @IBAction func onColorTapped(_ sender: UITapGestureRecognizer) {
     }
     @IBAction func onStartButtonTapped(_ sender: Any) {
@@ -41,22 +42,6 @@ class ViewController: UIViewController {
         addToPattern()
         startButton.alpha = 1.0
     }
-
-    func flashColor(number: Int) {
-        self.playSound(fileName: String(number))
-        UIView.transition(with: colorDisplays[number], duration: 0.2, options: .transitionCrossDissolve, animations: {
-            self.colorDisplays[number].alpha = 1.0
-        }) {(true) in
-            UIView.transition(with: self.colorDisplays[number], duration: 0.2, options: .transitionCrossDissolve, animations: {self.colorDisplays[number].alpha = 4.0
-                }, completion: nil)
-        }
-    
-    
-    
-    
-    
-    
-    
     
     func playSound(fileName: String){
         if let path = Bundle.main.path(forResource: fileName, ofType: "wav"){
@@ -71,5 +56,19 @@ class ViewController: UIViewController {
         }
     }
     
+    func flashColor(number: Int) {
+        self.playSound(fileName: String(number))
+        UIView.transition(with: colorDisplays[number], duration: 0.2, options: .transitionCrossDissolve, animations: {
+            self.colorDisplays[number].alpha = 1.0
+        }) {(true) in
+            UIView.transition(with: self.colorDisplays[number], duration: 0.2, options: .transitionCrossDissolve, animations: {self.colorDisplays[number].alpha = 4.0
+            }, completion: nil)
+        }
+    }
+        
+        
+        
+        
+       
 }
 
