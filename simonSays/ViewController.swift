@@ -70,10 +70,21 @@ class ViewController: UIViewController {
             }, completion: nil)
         }
     }
-        
-        
-        
-        
+    func displaypattern(){
+        timer = Timer()
+    }
+    @objc func nextColor(){
+        if index < pattern.count {
+            flashColor(number: pattern[index])
+            index += 1
+    }
+        else {
+            timer.invalidate()
+            index = 0
+            playerTurn = true
+            messageLabel.text = "Yout Turn"
+        }
+    }
        
 }
 
