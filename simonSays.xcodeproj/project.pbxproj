@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA020B32215D490C008750B0 /* 0.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA020B31215D490C008750B0 /* 0.wav */; };
 		FAAB00202152BC620088FB94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB001F2152BC620088FB94 /* AppDelegate.swift */; };
 		FAAB00222152BC620088FB94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB00212152BC620088FB94 /* ViewController.swift */; };
 		FAAB00252152BC620088FB94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAB00232152BC620088FB94 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA020B31215D490C008750B0 /* 0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0.wav; sourceTree = "<group>"; };
 		FAAB001C2152BC620088FB94 /* simonSays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simonSays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAB001F2152BC620088FB94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAAB00212152BC620088FB94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				FAAB00232152BC620088FB94 /* Main.storyboard */,
 				FAAB00262152BC630088FB94 /* Assets.xcassets */,
 				FAAB00282152BC630088FB94 /* LaunchScreen.storyboard */,
+				FA020B31215D490C008750B0 /* 0.wav */,
 				FAD6E32521555DD000C9E95E /* 1.wav */,
 				FAD6E32721555DD800C9E95E /* 2.wav */,
 				FAD6E32921555DDD00C9E95E /* 3.wav */,
@@ -147,6 +150,7 @@
 				FAD6E32621555DD000C9E95E /* 1.wav in Resources */,
 				FAD6E32C21555DE600C9E95E /* start.wav in Resources */,
 				FAD6E32821555DD800C9E95E /* 2.wav in Resources */,
+				FA020B32215D490C008750B0 /* 0.wav in Resources */,
 				FAAB00252152BC620088FB94 /* Main.storyboard in Resources */,
 				FAD6E32E21555DED00C9E95E /* lose.wav in Resources */,
 			);
